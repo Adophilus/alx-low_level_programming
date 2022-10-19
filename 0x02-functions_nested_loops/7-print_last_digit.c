@@ -1,20 +1,26 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_last_digit - checks number
- * @j: entero recibo por main.
- * Return: Devuelve r cuando es valor absoluto positivo,
+ * print_last_digit - Prints the last digit
+ * of a number.
+ *
+ * @n: input number as an integer.
+ *
+ * Return: last digit.
  */
-int print_last_digit(int j)
+int print_last_digit(int n)
 {
-	int i;
+	int l;
 
-	i = j % 10;
-
-	if (i < 0)
+	l = n % 10;
+	if (l < 0)
 	{
-		i *= -1;
+		_putchar(-l + 48);
+		return (-l);
 	}
-	_putchar(i + '0');
-	return (i);
+	else
+	{
+		_putchar(l + 48);
+		return (l);
+	}
 }

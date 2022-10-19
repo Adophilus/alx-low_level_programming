@@ -1,18 +1,21 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _abs - checks number
- * @r: entero recibo por main.
- * Return: Devuelve r cuando es valor absoluto positivo,
+ * _abs - Computes the absolute value
+ * of an integer.
+ *
+ * @n: input number as an integer.
+ *
+ * Return: absolute value
  */
-int _abs(int r)
+int _abs(int n)
 {
-	if (r >= 0)
+	if (n < 0)
 	{
-		return (r);
+		return (n * -1);
 	}
 	else
 	{
-		return (-r);
+		return (n);
 	}
 }
